@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="form2.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div style="display: flex;">
+    <div style="width: 50%; flex: 1; border: 1px solid grey;" class="form-section">
+      <h2>Form</h2>
+      <form onsubmit="return validateForm(event)" id="form">
+        <div class="bdr">
+          <div class="heading">USER PERSONAL INFORMATION</div>
+          <div class="lr">
+            <div class="right">
+              <div class="r1">
+
+                <label for="fname">Enter your First Name </label>
+                <input type="text" id="fname" />
+                <label for="passward">Enter the Passward</label>
+                <input type="password" id="passward" maxlength="5" />
+                <label for="date">Enter Date of Birth</label>
+                <input type="date" id="date" />
+                <label for="gender">Select your Gender</label>
+                <input type="radio" name="gender" value="male">male</input>
+                <input type="radio" name="gender" value="female">female</input>
+              </div>
+            </div>
+
+            <div class="left">
+              <div class="l1">
+                <label for="lastname">Enter Your Last Name </label>
+                <input type="text" id="lastname" />
+                <label for="number">Enter Your Number</label>
+                <input type="number" id="number">
+                <label for="countary">Select Your Country</label>
+                <select id="countary">
+                  <option value="india">India</option>
+                  <option value="egypt">Egypt</option>
+                  <option value="usa">USA</option>
+                  <option value="italy">Italy</option>
+                  <option value="spain">Spain</option>
+                </select>
+                <label for="city">Select Your City</label>
+                <select id="city">
+                  <option value="gurugram">Gurugram</option>
+                  <option value="noida">Noida</option>
+                  <option value="jaipur">Jaipur</option>
+                  <option value="alwar">Alwar</option>
+                  <option value="delhi">Delhi</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sbt">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div style="width: 50%; flex: 1; border: 1px solid grey;" class="output-section">
+      <h2 class="form submitted">Form Output</h2>
+
+      
+      <div id="result"></div>
+    </div>
+  </div>
+
+
+  <script src="form2.js"></script>
+</body>
+
+</html>
